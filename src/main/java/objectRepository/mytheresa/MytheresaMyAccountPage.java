@@ -22,7 +22,7 @@ public class MytheresaMyAccountPage {
 	WebElement my_wishlist;
 	
 	
-	// constructor method
+///////////	// constructor method
 		public MytheresaMyAccountPage(WebDriver driver) {
 			this.driver = driver;
 			PageFactory.initElements(driver, this);

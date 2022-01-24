@@ -26,7 +26,7 @@ public class MytheresaWishListPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+	////////////////////////////////
 	public WebElement newArrivalListPath() {
 		return new_arraival;
 	}

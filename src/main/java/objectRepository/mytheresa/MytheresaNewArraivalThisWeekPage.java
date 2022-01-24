@@ -15,7 +15,7 @@ public class MytheresaNewArraivalThisWeekPage {
 
 	@FindBy(xpath = "//ul[contains(@class,'products-grid')]/li[contains(@class,'item')][3]")
 	WebElement root_element;
-
+////////////////////////
 	@FindBy(xpath = "//div[@id=\"wishlist-addto-overlay-content\"]//a[contains(@class,'btn-cart')]")
 	WebElement view_wishlist;
 
@@ -28,11 +28,11 @@ public class MytheresaNewArraivalThisWeekPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
+/////////////////////
 	public WebElement selectAsWishPath() {
 		return root_element.findElement(By.xpath(heart_button));
 	}
-	
+////////////////////////	
 	public boolean isSizeExist() {
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
 		boolean exists = root_element.findElements(By.xpath(size_select)).size() != 0;
